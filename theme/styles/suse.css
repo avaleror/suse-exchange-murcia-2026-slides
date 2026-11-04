@@ -1,0 +1,76 @@
+/* SUSE brand tokens (brand/tokens.json). Only these colours, nothing else. */
+:root {
+  --suse-pine: #0C322C;
+  --suse-jungle: #30BA78;
+  --suse-mint: #90EBCD;
+  --suse-persimmon: #FE7C3F;
+  --suse-midnight: #192072;
+  --suse-waterhole: #2453FF;
+  --suse-fog: #EFEFEF;
+  --suse-white: #FFFFFF;
+  --slidev-theme-primary: var(--suse-jungle);
+}
+
+.slidev-layout, .suse-slide {
+  font-family: 'SUSE', sans-serif;
+  font-weight: 300;
+  color: var(--suse-pine);
+}
+
+.suse-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.suse-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  overflow: visible;
+  padding: 9.8px; /* the template's 0.1in text inset */
+}
+
+.suse-title { font-weight: 400; letter-spacing: -0.005em; }
+.suse-subtitle { font-weight: 300; }
+
+/* body text, bullets: jungle markers like the template */
+.suse-body { font-weight: 300; }
+.suse-body p { margin: 0 0 0.4em; }
+.suse-body ul, .suse-body ol { margin: 0; padding-left: 1.1em; }
+.suse-body ul { list-style: disc; }
+.suse-body ol { list-style: decimal; }
+.suse-body ul ul { list-style: circle; }
+.suse-body li { margin: 0.15em 0; }
+.suse-body li::marker { color: var(--suse-jungle); }
+.suse-body ul ul, .suse-body ol ol { font-size: 0.85em; opacity: 0.85; }
+.suse-body h3 { font-size: 1em; font-weight: 600; margin: 0 0 0.35em; }
+.suse-body strong { font-weight: 600; }
+.suse-body a { color: var(--suse-jungle); text-decoration: underline; }
+.suse-body img, .suse-free img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+/* free area: anything on layouts without a body box (diagrams, components) */
+.suse-free {
+  position: absolute;
+  left: 5%; top: 22%; width: 90%; height: 64%;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* code: pine panel, palette-only highlighting (setup/shiki.ts) */
+.slidev-layout pre, .suse-slide pre.shiki {
+  background: var(--suse-pine) !important;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  font-size: 0.8em;
+}
+.suse-slide code { font-family: 'SUSE Mono', ui-monospace, monospace; }
+.suse-slide :not(pre) > code {
+  background: var(--suse-fog);
+  color: var(--suse-pine);
+  padding: 0.05em 0.3em;
+  border-radius: 3px;
+}
+
+.suse-number { font-family: 'SUSE Mono', monospace; text-align: right; }

@@ -1,0 +1,12 @@
+{
+  "name": "slidev-theme-suse",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SUSE brand theme for Slidev, generated from the official template",
+  "keywords": ["slidev-theme", "slidev"],
+  "engines": { "slidev": ">=53.0.0" },
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": { "fonts": { "sans": "SUSE", "mono": "SUSE Mono", "provider": "none" } }
+  }
+}

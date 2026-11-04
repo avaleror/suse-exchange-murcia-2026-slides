@@ -1,0 +1,119 @@
+/* Deck styles on top of the SUSE theme. Palette tokens only (theme/styles/suse.css). */
+
+/* ---------- body on card slides ---------- */
+.sx .suse-content .suse-body { font-size: 14px !important; padding-top: 4px; }
+.sx .lead { font-size: 16px; margin: -6px 0 12px; color: var(--suse-pine); }
+
+.g2, .g3, .g4, .g6 { display: grid; gap: 12px; height: 100%; }
+.g2 { grid-template-columns: 1fr 1fr; }
+.g3 { grid-template-columns: 1fr 1fr 1fr; }
+.g4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+.g6 { grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; }
+.with-lead { height: calc(100% - 34px); }
+
+/* ---------- cards: solid palette colours, like the final pptx ---------- */
+.card {
+  border-radius: 10px;
+  padding: 11px 14px;
+  line-height: 1.25;
+  overflow: hidden;
+}
+.card h3 { font-size: 18.5px !important; font-weight: 600 !important; margin: 0 0 6px !important; }
+.card ul { padding-left: 1.05em; }
+.card li { margin: 0.22em 0 !important; font-size: 15px; }
+.card p { font-size: 14.5px; margin: 0 0 0.3em !important; }
+.card .kicker { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 6px; }
+.card .tag {
+  display: inline-block; font-size: 10px; font-weight: 600; padding: 1px 6px; border-radius: 3px;
+  background: var(--suse-jungle); color: var(--suse-pine); margin-bottom: 6px; font-size: 11px;
+}
+
+.c-pine { background: var(--suse-pine); color: var(--suse-white); }
+.c-pine h3, .c-pine .kicker { color: var(--suse-jungle); }
+.c-midnight { background: var(--suse-midnight); color: var(--suse-white); }
+.c-midnight h3, .c-midnight .kicker { color: var(--suse-mint); }
+.c-waterhole { background: var(--suse-waterhole); color: var(--suse-white); }
+.c-waterhole h3 { color: var(--suse-white); }
+.c-jungle { background: var(--suse-jungle); color: var(--suse-pine); }
+.c-mint { background: var(--suse-mint); color: var(--suse-pine); }
+.c-fog { background: var(--suse-fog); color: var(--suse-pine); }
+.c-pine li::marker, .c-midnight li::marker { color: var(--suse-jungle); }
+.c-waterhole li::marker, .c-jungle li::marker { color: var(--suse-white); }
+.c-mint li::marker, .c-fog li::marker { color: var(--suse-pine); }
+
+/* white card with a coloured top bar (slide 6) */
+.c-bar { background: var(--suse-white); border: 1px solid var(--suse-fog); border-top: 6px solid var(--bar); color: var(--suse-pine); }
+.c-bar li::marker { color: var(--suse-pine); }
+
+/* card heading with a Material Symbols icon */
+.ico { display: flex; align-items: center; gap: 6px; }
+.ico svg { width: 20px; height: 20px; flex: none; }
+
+/* ---------- diagrams (slides 4, 7, 10, 11) ---------- */
+.dia { display: flex; flex-direction: column; gap: 8px; height: 100%; font-size: 12px; }
+.band { border-radius: 8px; padding: 7px 12px; }
+.band-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; font-size: 12px; }
+.band-head img { height: 20px; }
+.row { display: flex; gap: 8px; }
+.row > * { flex: 1; }
+.blk {
+  background: var(--suse-white); color: var(--suse-pine); border-radius: 6px; padding: 6px 8px;
+  text-align: center; line-height: 1.2; border: 1px solid var(--suse-fog);
+}
+.blk b { font-weight: 600; display: block; font-size: 14px; }
+.blk small { font-size: 12px; }
+.blk.out { border: 1.5px solid var(--suse-pine); }
+.blk.fog { background: var(--suse-fog); border-color: var(--suse-pine); }
+.arrow { flex: none !important; align-self: center; color: var(--suse-jungle); font-size: 20px; font-weight: 600; }
+.chip { flex: none !important; align-self: center; width: 28px; height: 28px; border-radius: 50%; background: var(--suse-jungle); color: var(--suse-white); display: grid; place-items: center; font-weight: 600; }
+
+/* ---------- code panel (VMs como código) ---------- */
+.sx pre.shiki { font-size: 10.5px !important; line-height: 1.35 !important; }
+
+/* ---------- statement slide with a live Geeko (Juntos, se moderniza mejor) ---------- */
+.look-mint .suse-slide { background-image: linear-gradient(180deg, var(--suse-white) 0%, var(--suse-mint) 140%) !important; }
+.corner-logo { position: absolute; left: 6.5%; top: 11%; width: 21%; }
+
+/* Gartner / Forrester legal line (visible, the deck is public) */
+.legal { position: absolute; left: 10px; right: 10px; bottom: -6px; font-size: 6.5px; line-height: 1.2; opacity: 0.75; }
+
+/* ---------- footer sources ---------- */
+.sources {
+  position: absolute; left: 19%; right: 11%; top: 85.6%;
+  font-size: 7.5px; line-height: 1.3; color: var(--suse-pine);
+}
+.sources a { color: var(--suse-pine); text-decoration: underline; }
+
+/* ---------- animated Geekos (CSS transforms only, official artwork untouched) ---------- */
+.geeko-wrap { position: absolute; pointer-events: none; z-index: 5; }
+.geeko-anim { width: 100%; display: block; }
+
+/* hanging from a branch: swings from the grip point at the top */
+.ga-swing { transform-origin: 50% 6%; animation: g-swing 3.2s ease-in-out infinite; }
+@keyframes g-swing { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+
+/* drops in from above, bounces, then keeps swinging */
+.ga-drop { transform-origin: 50% 6%; animation: g-drop 1.3s cubic-bezier(.3, 1.6, .5, 1) both, g-swing 3.2s ease-in-out 1.3s infinite; }
+@keyframes g-drop { from { transform: translateY(-110%); } to { transform: translateY(0); } }
+
+/* sitting: proud little bob */
+.ga-bob { transform-origin: 50% 100%; animation: g-bob 2.6s ease-in-out infinite; }
+@keyframes g-bob { 0%, 100% { transform: translateY(0) scaleY(1); } 45% { transform: translateY(-5%) scaleY(1.02); } 55% { transform: translateY(-5%) scaleY(1.02); } }
+
+/* on a branch: the branch rocks gently */
+.ga-sway { transform-origin: 50% 90%; animation: g-sway 4s ease-in-out infinite; }
+@keyframes g-sway { 0%, 100% { transform: rotate(-2.5deg) translateY(0); } 50% { transform: rotate(2.5deg) translateY(-3%); } }
+
+/* peeks in from the right edge and back */
+.ga-peek { animation: g-peek 7s ease-in-out infinite; }
+@keyframes g-peek { 0%, 12%, 100% { transform: translateX(70%); } 30%, 80% { transform: translateX(0); } }
+
+/* only animate the slide on screen, so entrances play when you arrive */
+.sx:not(.active) .geeko-anim { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  .geeko-anim, .geeko-nav * { animation: none !important; transition: none !important; }
+}
+
+/* cover subtitle keeps the pptx line break */
+.suse-cover-geeko .suse-subtitle { white-space: pre-line; }
