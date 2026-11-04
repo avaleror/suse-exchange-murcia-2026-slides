@@ -117,3 +117,19 @@
 
 /* cover subtitle keeps the pptx line break */
 .suse-cover-geeko .suse-subtitle { white-space: pre-line; }
+
+/* ---------- about me ---------- */
+.about { display: grid; grid-template-columns: 0.8fr 2.2fr; gap: 18px; height: 100%; align-items: stretch; }
+.who { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.who .photo { width: 170px; height: 170px; border-radius: 50%; object-fit: cover; border: 5px solid var(--suse-jungle); }
+.who .name { font-size: 24px; font-weight: 600; margin-top: 14px; color: var(--suse-pine); }
+.who .role { font-size: 15px; margin-top: 4px; color: var(--suse-pine); }
+.who .org { font-size: 13px; margin-top: 2px; color: var(--suse-jungle); font-weight: 600; }
+.about-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+
+/* ---------- QR codes on the closing slide ---------- */
+.qr-stack { position: absolute; right: -1%; top: -8%; display: flex; flex-direction: column; gap: 14px; }
+.qr { display: flex; flex-direction: column; align-items: center; text-decoration: none !important; }
+.qr img { width: 120px !important; height: 120px; border-radius: 8px; background: var(--suse-white); }
+.qr-label { margin-top: 5px; font-size: 14px; font-weight: 600; color: var(--suse-mint); }
+.qr-sub { font-size: 10.5px; color: var(--suse-fog); font-family: 'SUSE Mono', monospace; }

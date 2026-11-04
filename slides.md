@@ -18,6 +18,55 @@ nav: false
 [0:00-0:20] Bienvenida. Hoy vamos a hablar de dos cosas que van juntas: cómo se gestiona Kubernetes en producción con SUSE Rancher Prime, y cómo SUSE Virtualization lleva sus máquinas virtuales a una plataforma hiperconvergente y abierta. Empezamos por lo que ya tienen en casa.
 -->
 
+---
+layout: s
+title: Quién soy
+nav: false
+---
+
+<div class="about">
+<div class="who">
+  <img class="photo" src="/andres.jpg" alt="Andrés Valero" />
+  <div class="name">Andrés Valero</div>
+  <div class="role">Principal Technology Advocate</div>
+  <div class="org">SUSE · Valencia</div>
+</div>
+<div class="about-cards">
+<div class="card c-pine">
+
+### Qué hago en SUSE
+
+- Demos, charlas, talleres y webinars
+- Vídeos, blogs y contenido técnico
+- Apoyo a marketing y ventas en todo lo técnico
+
+</div>
+<div class="card c-jungle">
+
+### En qué me centro
+
+- Kubernetes con SUSE Rancher Prime
+- VMs a plataformas abiertas con SUSE Virtualization
+- Soberanía digital e IA en infraestructura propia
+
+</div>
+<div class="card c-midnight">
+
+### De dónde vengo
+
+- Más de 10 años en cloud native y Kubernetes
+- De ingeniero DevOps a technology advocate
+- Certificado CKA y CKAD
+
+</div>
+</div>
+</div>
+
+<!--
+[~20 s] Una presentación rápida, porque la mayoría no me conoce. Soy Andrés Valero, Principal Technology Advocate en SUSE, desde Valencia. Mi trabajo es enseñar la tecnología funcionando: demos, charlas y talleres sobre Kubernetes, máquinas virtuales e IA en infraestructura que controla cada organización. Llevo más de 10 años en cloud native y Kubernetes, empecé como ingeniero DevOps. Y ahora, vamos a lo suyo.
+-->
+
+
 
 ---
 layout: s
@@ -722,10 +771,28 @@ Abrir preguntas.
 -->
 
 ---
-layout: closing-geeko
+layout: s
+base: closing-geeko
 title: Gracias
 nav: false
 ---
+
+<div class="qr-stack">
+<a class="qr" href="https://avaleror.github.io/suse-exchange-murcia-2026-slides/" target="_blank">
+  <img src="/qr/slides.svg" alt="QR: estas slides en GitHub Pages" />
+  <span class="qr-label">Estas slides</span>
+  <span class="qr-sub">avaleror.github.io</span>
+</a>
+<a class="qr" href="https://www.linkedin.com/in/avaleror/" target="_blank">
+  <img src="/qr/linkedin-andres.svg" alt="QR: Andrés Valero en LinkedIn" />
+  <span class="qr-label">LinkedIn</span>
+  <span class="qr-sub">in/avaleror</span>
+</a>
+</div>
+
+<!--
+Gracias. Las slides, con fuentes y notas, están en el primer QR; el segundo es mi LinkedIn, encantado de seguir la conversación por ahí.
+-->
 
 ---
 layout: s

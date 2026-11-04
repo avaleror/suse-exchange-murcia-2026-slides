@@ -4,7 +4,7 @@ Slides de la charla de Andrés Valero en **SUSE Exchange Murcia 2026**, en Slide
 
 **Ver las slides:** https://avaleror.github.io/suse-exchange-murcia-2026-slides/
 
-Cómo gestionar Kubernetes en producción con SUSE Rancher Prime y llevar las máquinas virtuales a una plataforma hiperconvergente y abierta con SUSE Virtualization. 19 slides de charla y un anexo para las preguntas.
+Cómo gestionar Kubernetes en producción con SUSE Rancher Prime y llevar las máquinas virtuales a una plataforma hiperconvergente y abierta con SUSE Virtualization. 20 slides de charla y un anexo para las preguntas.
 
 Navegación: flechas o espacio. `o` abre la vista general, `p` el modo presentador con notas. Abajo, Geeko recorre los capítulos de la charla.
 
