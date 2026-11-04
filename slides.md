@@ -146,7 +146,7 @@ layout: s
 title: Rancher Prime gestiona todo su Kubernetes
 sources:
   - { label: Clústeres en Rancher, url: "https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup" }
-  - { label: AKS, EKS y GKE, url: "https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers" }
+  - { label: "AKS, EKS y GKE", url: "https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers" }
   - { label: Registrar clústeres, url: "https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/register-existing-clusters" }
 ---
 
@@ -250,7 +250,7 @@ geeko: { pose: sitting-confident, anim: bob, x: 86.5, y: 10.5, w: 9 }
 sources:
   - { label: Ciclo de vida de productos SUSE, url: "https://www.suse.com/lifecycle/" }
   - { label: Política de soporte de Rancher Prime, url: "https://www.suse.com/support/rancher-prime/" }
-  - { label: Rancher v2.9.6, versión solo Prime, url: "https://github.com/rancher/rancher/releases/tag/v2.9.6" }
+  - { label: "Rancher v2.9.6, versión solo Prime", url: "https://github.com/rancher/rancher/releases/tag/v2.9.6" }
 ---
 
 <div class="g2 with-lead">
